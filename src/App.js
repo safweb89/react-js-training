@@ -1,9 +1,9 @@
 import React from "react";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
-// import SlectComponent from "./SelectComponent";
 import Select from "./Components/Select";
 import "./App.css";
+// import SlectComponent from "./SelectComponent";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,8 +14,10 @@ class App extends React.Component {
     };
   }
 
+
   render() {
     console.log(this.state.file);
+
     // const fileToEdit = this.state.file && require(this.state.file);
     const thefile = this.state.file && require(`${this.state.file}`);
     return (
@@ -36,8 +38,9 @@ class App extends React.Component {
             height="800px"
             width="800px"
             onChange={(e) => this.setState({ fileContent: e.json })}
+
           />
-          <button onClick={() => console.log(this.State)} >Save</button>
+          <button onClick={() => console.log(this.state)} >Save</button>
         </header>{" "}
       </div>
     );
