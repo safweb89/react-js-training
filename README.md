@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### TO RUN PROJECT
+
+1- install nodemon `npm i -g nodemon --save`
+2- run server : start new terminal then run this command `nodemon server.js`
+3- run Application: start a new terminal then run this command `yarn start`

@@ -5,9 +5,12 @@ export default function Select(props) {
   return (
     <div className="custom-select">
       <select onChange={props.handleChange} value={props.file}>
-        <option value={"./sampledata.json"}> sample Data</option>
-        <option value={"./secondSample.json"}> value 2</option>
-        <option value={"./sample three.json"}> value 3</option>
+        <option>select a file</option>
+        {props.data.map((item, index) => (
+          <option key={index} value={`./files/${item}`}>
+            {item}
+          </option>
+        ))}
       </select>
     </div>
   );
